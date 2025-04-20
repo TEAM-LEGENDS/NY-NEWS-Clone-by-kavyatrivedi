@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NY News Hub - Your trusted source for New York news, covering politics, business, culture, and sports.">
+    <title>NY News Hub - Future of News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;line-height:1.6;background:linear-gradient(135deg,#f3f4f6,#e5e7eb);color:#111827;transition:background .5s,color .5s;scroll-behavior:smooth}.dark-theme{background:linear-gradient(135deg,#1f2937,#111827);color:#f9fafb}.container{max-width:1200px;margin:0 auto;padding:0 1rem}.progress-bar{position:fixed;top:0;left:0;width:0;height:4px;background:linear-gradient(90deg,#2563eb,#7c3aed);z-index:100;transition:width .2s}.header{background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:0 4px 6px rgba(0,0,0,.1);position:sticky;top:0;z-index:50}.dark-theme .header{background:rgba(31,41,55,.95)}.header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}.logo{font-family:Orbitron,sans-serif;font-size:1.75rem;font-weight:700;background:linear-gradient(45deg,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}.nav{display:flex;gap:1.5rem;align-items:center}.nav a{text-decoration:none;color:inherit;font-weight:500;position:relative;transition:color .3s}.nav a::after{content:'';position:absolute;width:0;height:2px;bottom:-4px;left:0;background:#2563eb;transition:width .3s}.nav a:hover::after{width:100%}.nav a:hover{color:#2563eb}.search-bar{display:flex;align-items:center;background:#e5e7eb;border-radius:.5rem;padding:.5rem}.dark-theme .search-bar{background:#4b5563}.search-bar input{background:none;border:none;outline:none;color:inherit;font-size:.9rem;width:120px}.search-bar button{background:none;border:none;cursor:pointer;color:#2563eb;padding:.25rem}.theme-toggle{background:#e5e7eb;border:none;padding:.5rem;border-radius:50%;cursor:pointer;font-size:1rem}.dark-theme .theme-toggle{background:#4b5563}.theme-toggle:hover{transform:rotate(360deg);transition:transform .3s}.menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer}.ticker{background:linear-gradient(90deg,#dc2626,#b91c1c);color:#fff;padding:.5rem 0;overflow:hidden;box-shadow:0 2px 4px rgba(0,0,0,.2)}.ticker-label{font-weight:600;margin-right:1rem;text-transform:uppercase}.ticker-content{display:inline-block;white-space:nowrap;animation:marquee 15s linear infinite;font-size:.9rem}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.hero{padding:2rem 0;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem}.hero-carousel{display:flex;width:400%;animation:slide 16s infinite linear;will-change:transform}.hero-slide{flex:0 0 25%;position:relative;border-radius:.5rem;overflow:hidden}.hero-img{width:100%;height:28rem;object-fit:cover;filter:brightness(.8);transition:transform .5s;loading:lazy}.hero-slide:hover .hero-img{transform:scale(1.05)}.hero-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.9),transparent);padding:1.5rem;color:#fff}.hero-title{font-size:2rem;font-weight:700;text-shadow:0 2px 4px rgba(0,0,0,.5)}.hero-text{font-size:1rem;margin-top:.5rem}.hero-sidebar{display:grid;gap:1rem;position:sticky;top:5rem}.sidebar-card{background:rgba(255,255,255,.95);padding:1rem;border-radius:.5rem;box-shadow:0 4px 6px rgba(0,0,0,.1);transition:transform .3s}.dark-theme .sidebar-card{background:rgba(55,65,81,.95)}.sidebar-card:hover{transform:translateY(-5px)}.sidebar-title{font-size:1.25rem;font-weight:600}.poll-btn{background:none;border:none;color:#2563eb;font-weight:500;cursor:pointer;margin-top:.5rem}.poll-btn:hover{text-decoration:underline}.categories{padding:2rem 0}.section-title{font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;text-align:center;background:linear-gradient(45deg,#2563eb,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}.category-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;margin-bottom:2rem}.category-btn{padding:.75rem;border:none;border-radius:.5rem;color:#fff;font-weight:600;cursor:pointer;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}.category-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .5s}.category-btn:hover::before{left:100%}.category-btn:hover{transform:scale(1.05);box-shadow:0 4px 8px rgba(0,0,0,.2)}.category-btn[data-category="politics"]{background:linear-gradient(45deg,#2563eb,#1e40af)}.category-btn[data-category="business"]{background:linear-gradient(45deg,#059669,#047857)}.category-btn[data-category="culture"]{background:linear-gradient(45deg,#7c3aed,#6d28d9)}.category-btn[data-category="sports"]{background:linear-gradient(45deg,#d97706,#b45309)}.category-btn.active{outline:3px solid #2563eb;outline-offset:2px}.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;animation:fadeIn .5s ease-in}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.news-card{background:rgba(255,255,255,.95);border-radius:.5rem;box-shadow:0 4px 6px rgba(0,0,0,.1);overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer}.dark-theme .news-card{background:rgba(55,65,81,.95)}.news-card:hover{transform:translateY(-10px);box-shadow:0 8px 16px rgba(0,0,0,.2)}.news-card img{width:100%;height:12rem;object-fit:cover;transition:transform .5s;loading:lazy}.news-card:hover img{transform:scale(1.1)}.news-card-content{padding:1rem}.news-card-content h3{font-size:1.25rem;font-weight:600}.news-card-content p{color:#6b7280;margin-top:.5rem}.dark-theme .news-card-content p{color:#9ca3af}.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:100;align-items:center;justify-content:center}.modal-content{background:#fff;border-radius:.5rem;max-width:600px;width:90%;padding:2rem;position:relative;animation:slideIn .3s ease}.dark-theme .modal-content{background:#374151}@keyframes slideIn{from{transform:translateY(-50px);opacity:0}to{transform:translateY(0);opacity:1}}.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#111827}.dark-theme .modal-close{color:#f9fafb}.modal-img{width:100%;height:200px;object-fit:cover;border-radius:.5rem;margin-bottom:1rem}.modal-title{font-size:1.5rem;font-weight:600;margin-bottom:.5rem}.modal-text{color:#6b7280}.dark-theme .modal-text{color:#9ca3af}.live{padding:2rem 0;background:linear-gradient(135deg,#e5e7eb,#d1d5db)}.dark-theme .live{background:linear-gradient(135deg,#374151,#1f2937)}.live-placeholder{background:rgba(229,231,235,.5);height:24rem;display:flex;align-items:center;justify-content:center;border-radius:.5rem;font-size:1.25rem;position:relative;overflow:hidden}.dark-theme .live-placeholder{background:rgba(75,85,99,.5)}.live-placeholder::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle,rgba(255,255,255,.2),transparent);animation:pulse 3s infinite}@keyframes pulse{0%{transform:scale(1);opacity:.5}50%{transform:scale(1.2);opacity:.2}100%{transform:scale(1);opacity:.5}}.footer{background:linear-gradient(180deg,#111827,#0f172a);color:#f9fafb;padding:2rem 0}.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}.footer-title{font-size:1.25rem;font-weight:600;margin-bottom:1rem}.footer-links li{margin-bottom:.5rem}.footer-links a,.social-links a{color:#f9fafb;text-decoration:none;transition:color .3s}.footer-links a:hover,.social-links a:hover{color:#60a5fa}.social-links{display:flex;gap:1rem}.footer-copy{text-align:center;margin-top:2rem;font-size:.875rem}.spinner{display:none;border:4px solid #f3f4f6;border-top:4px solid #2563eb;border-radius:50%;width:24px;height:24px;animation:spin 1s linear infinite;margin:1rem auto}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.no-results{text-align:center;color:#6b7280;padding:1rem}.dark-theme .no-results{color:#9ca3af}@keyframes slide{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}@media (max-width:768px){.nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.95);padding:1rem;box-shadow:0 4px 6px rgba(0,0,0,.1)}.dark-theme .nav{background:rgba(31,41,55,.95)}.nav.active{display:flex}.menu-toggle{display:block}.hero-grid{grid-template-columns:1fr}.hero-img{height:20rem}.hero-title{font-size:1.5rem}.hero-sidebar{position:static;margin-top:1rem}.category-grid{grid-template-columns:repeat(auto-fit,minmax(100px,1fr))}.search-bar{display:none}}@media (max-width:480px){.logo{font-size:1.25rem}.section-title{font-size:1.5rem}.hero-img{height:16rem}.hero-title{font-size:1.25rem}.ticker-content{font-size:.75rem}.modal-content{padding:1rem}.modal-img{height:150px}}
+    </style>
+</head>
+<body class="light-theme">
+    <div class="progress-bar" id="progressBar"></div>
+    <header class="header" role="banner">
+        <div class="container">
+            <h1 class="logo">NY News Hub</h1>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <a href="#home" aria-label="Home">Home</a>
+                <a href="#categories" aria-label="Categories">Categories</a>
+                <a href="#live" aria-label="Live">Live</a>
+                <div class="search-bar" role="search">
+                    <input type="text" id="searchInput" placeholder="Search news..." aria-label="Search news"/>
+                    <button id="searchBtn" aria-label="Search">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle theme">☀️</button>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+    <div class="ticker" role="alert">
+        <div class="container">
+            <span class="ticker-label">Breaking News:</span>
+            <div class="ticker-content" id="newsTicker">
+                <span>New York Mayor Announces New Public Safety Initiative | Stock Market Sees Record Highs | Local School Wins National Award</span>
+            </div>
+        </div>
+    </div>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-main">
+                    <div class="hero-carousel" id="heroCarousel">
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b2746761b" alt="NYC infrastructure project" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title" id="hero-title">Major Infrastructure Project Unveiled in NYC</h2>
+                                <p class="hero-text">City officials announce a $2B plan to modernize public transportation.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1591117207239-88b5411123db" alt="NYC city hall" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Mayor’s Approval Ratings Drop</h2>
+                                <p class="hero-text">Recent polls show declining support among voters.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60" alt="Wall Street" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Wall Street Sees Record Gains</h2>
+                                <p class="hero-text">Tech stocks lead the rally in historic trading session.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b9283f9baf67" alt="Broadway show" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Broadway Announces New Shows</h2>
+                                <p class="hero-text">Exciting lineup unveiled for 2025 season.</p>
+                            </div>
+                        </div>
+                        <!-- Duplicated slides for infinite loop -->
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b2746761b" alt="NYC infrastructure project" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Major Infrastructure Project Unveiled in NYC</h2>
+                                <p class="hero-text">City officials announce a $2B plan to modernize public transportation.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1591117207239-88b5411123db" alt="NYC city hall" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Mayor’s Approval Ratings Drop</h2>
+                                <p class="hero-text">Recent polls show declining support among voters.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60" alt="Wall Street" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Wall Street Sees Record Gains</h2>
+                                <p class="hero-text">Tech stocks lead the rally in historic trading session.</p>
+                            </div>
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1517457373958-b9283f9baf67" alt="Broadway show" class="hero-img" onerror="this.src='https://via.placeholder.com/800x450?text=Image+Not+Found'">
+                            <div class="hero-overlay">
+                                <h2 class="hero-title">Broadway Announces New Shows</h2>
+                                <p class="hero-text">Exciting lineup unveiled for 2025 season.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Weather Update</h3>
+                        <p>Sunny with a high of 72°F today in New York City.</p>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Quick Poll</h3>
+                        <p>What’s the biggest issue facing NYC today?</p>
+                        <button class="poll-btn">Vote Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="categories" aria-labelledby="categories-title">
+        <div class="container">
+            <h2 class="section-title" id="categories-title">Explore Categories</h2>
+            <div class="category-grid">
+                <button class="category-btn active" data-category="politics" aria-label="Politics category">Politics</button>
+                <button class="category-btn" data-category="business" aria-label="Business category">Business</button>
+                <button class="category-btn" data-category="culture" aria-label="Culture category">Culture</button>
+                <button class="category-btn" data-category="sports" aria-label="Sports category">Sports</button>
+            </div>
+            <div class="spinner" id="spinner"></div>
+            <div id="newsGrid" class="news-grid"></div>
+        </div>
+    </section>
+    <section id="live" class="live" aria-labelledby="live-title">
+        <div class="container">
+            <h2 class="section-title" id="live-title">Live Stream</h2>
+            <div class="live-placeholder">
+                <p>Live stream placeholder (e.g., YouTube or custom player)</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-title">About NY News Hub</h3>
+                    <p>Your trusted source for New York news, covering politics, culture, business, and more.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+                        <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#" aria-label="Terms of Service">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copy">© 2025 NY News Hub. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="modal" id="newsModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <img class="modal-img" id="modalImg" alt="Article Image">
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-text" id="modalText"></p>
+        </div>
+    </div>
+    <script>
+        const darkModeToggle=document.getElementById("darkModeToggle"),menuToggle=document.getElementById("menuToggle"),nav=document.querySelector(".nav"),progressBar=document.getElementById("progressBar"),newsGrid=document.getElementById("newsGrid"),categoryButtons=document.querySelectorAll(".category-btn"),searchInput=document.getElementById("searchInput"),searchBtn=document.getElementById("searchBtn"),spinner=document.getElementById("spinner"),modal=document.getElementById("newsModal"),modalImg=document.getElementById("modalImg"),modalTitle=document.getElementById("modalTitle"),modalText=document.getElementById("modalText"),modalClose=document.getElementById("modalClose");function updateThemeIcon(){darkModeToggle.textContent=document.body.classList.contains("dark-theme")?"☀️":"🌙"}darkModeToggle.addEventListener("click",()=>{document.body.classList.toggle("dark-theme");localStorage.setItem("theme",document.body.classList.contains("dark-theme")?"dark":"light");updateThemeIcon()});if(localStorage.getItem("theme")==="dark"){document.body.classList.add("dark-theme")}updateThemeIcon();menuToggle.addEventListener("click",()=>{nav.classList.toggle("active")});window.addEventListener("scroll",()=>{const e=window.scrollY,t=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=`${e/t*100}%`});const newsData={politics:[{title:"New Bill Proposed in Albany",summary:"Legislators discuss new environmental regulations.",img:"https://images.unsplash.com/photo-1583912268550-e8a443d28b5b"},{title:"Mayor’s Approval Ratings Drop",summary:"Recent polls show declining support.",img:"https://images.unsplash.com/photo-1591117207239-88b5411123db"},{title:"State Budget Talks Intensify",summary:"Lawmakers debate funding priorities.",img:"https://images.unsplash.com/photo-1566577739112-5180d7bf9394"}],business:[{title:"Wall Street Sees Gains",summary:"Tech stocks lead the rally.",img:"https://images.unsplash.com/photo-1614027164847-1b28cfe1df60"},{title:"New Startup Hub Opens",summary:"Brooklyn welcomes innovation center.",img:"https://images.unsplash.com/photo-1507679799987-c73779587ccf"},{title:"Retail Sector Rebounds",summary:"Local businesses report strong sales.",img:"https://images.unsplash.com/photo-1522202176988-66273c2b6b14"}],culture:[{title:"Broadway Announces New Shows",summary:"Exciting lineup for 2025 season.",img:"https://images.unsplash.com/photo-1517457373958-b9283f9baf67"},{title:"Art Exhibit Opens at MET",summary:"Modern art takes center stage.",img:"https://images.unsplash.com/photo-1579001514349-c57b64ca66b7"},{title:"NYC Film Festival Kicks Off",summary:"Independent films shine in annual event.",img:"https://images.unsplash.com/photo-1536440136628-849c177e76a1"}],sports:[{title:"Yankees Win Streak Continues",summary:"Team dominates in recent games.",img:"https://images.unsplash.com/photo-1612872087720-7abd03cd86f0"},{title:"NYC Marathon Preparations",summary:"City gears up for annual event.",img:"https://images.unsplash.com/photo-1552673464-262a80eb7b7f"},{title:"Knicks Secure Playoff Spot",summary:"Team celebrates strong season.",img:"https://images.unsplash.com/photo-1518609571773-39b704d86b34"}]};function displayNews(e){newsGrid.innerHTML="";newsData[e].forEach(e=>{const t=document.createElement("div");t.className="news-card";t.dataset.title=e.title;t.dataset.summary=e.summary;t.dataset.img=e.img;t.innerHTML=`<img src="${e.img}" alt="${e.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Not+Found'"><div class="news-card-content"><h3>${e.title}</h3><p>${e.summary}</p></div>`;newsGrid.appendChild(t)})}displayNews("politics");categoryButtons.forEach(e=>{e.addEventListener("click",()=>{const t=e.dataset.category;spinner.style.display="block";newsGrid.style.opacity="0";setTimeout(()=>{displayNews(t);spinner.style.display="none";newsGrid.style.opacity="1";attachModalListeners()},300);categoryButtons.forEach(e=>e.classList.remove("active"));e.classList.add("active")})});searchBtn.addEventListener("click",()=>{const e=searchInput.value.toLowerCase().trim();if(!e)return;spinner.style.display="block";newsGrid.style.opacity="0";setTimeout(()=>{newsGrid.innerHTML="";let t=false;Object.keys(newsData).forEach(i=>{newsData[i].forEach(i=>{if(i.title.toLowerCase().includes(e)||i.summary.toLowerCase().includes(e)){t=true;const a=document.createElement("div");a.className="news-card";a.dataset.title=i.title;a.dataset.summary=i.summary;a.dataset.img=i.img;a.innerHTML=`<img src="${i.img}" alt="${i.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x200?text=Image+Not+Found'"><div class="news-card-content"><h3>${i.title}</h3><p>${i.summary}</p></div>`;newsGrid.appendChild(a)}})});if(!t)newsGrid.innerHTML='<p class="no-results">No results found.</p>';spinner.style.display="none";newsGrid.style.opacity="1";attachModalListeners()},300)});searchInput.addEventListener("keypress",e=>{"Enter"===e.key&&searchBtn.click()});function attachModalListeners(){document.querySelectorAll(".news-card").forEach(e=>{e.addEventListener("click",()=>{modalImg.src=e.dataset.img;modalTitle.textContent=e.dataset.title;modalText.textContent=e.dataset.summary;modal.style.display="flex"})})}modalClose.addEventListener("click",()=>{modal.style.display="none"});modal.addEventListener("click",e=>{e.target===modal&&(modal.style.display="none")});document.addEventListener("keydown",e=>{"Escape"===e.key&&modal.style.display==="flex"&&(modal.style.display="none")});attachModalListeners();const ticker=document.getElementById("newsTicker");ticker.textContent=ticker.textContent+" | "+ticker.textContent;document.querySelectorAll(".nav a").forEach(e=>{e.addEventListener("click",t=>{t.preventDefault();const i=e.getAttribute("href").substring(1);document.getElementById(i).scrollIntoView({behavior:"smooth"});nav.classList.remove("active")})});const images=document.querySelectorAll('img[loading="lazy"]'),observer=new IntersectionObserver((e,t)=>{e.forEach(e=>{if(e.isIntersecting){e.target.src=e.target.src;t.unobserve(e.target)}})},{rootMargin:"100px"});images.forEach(e=>observer.observe(e));
+    </script>
+</body>
+</html>
